@@ -1,0 +1,124 @@
+
+\documentclass[a4paper,10pt]{article}
+\usepackage[a4paper,margin=0.5in]{geometry} % Reduced margins
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+\pagestyle{empty}
+
+
+% Set font
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{parskip}
+
+% Custom section formatting
+\titleformat{\section}{\fontsize{15}{17}\bfseries\color{black}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\fontsize{13}{15}\bfseries\color{black}}{}{0em}{}
+\titleformat{\subtitle}{\fontsize{12}{14}\selectfont}
+
+% Custom itemize formatting
+\setlist[itemize,1]{label=--,left=0pt,noitemsep,topsep=0pt} % Removed extra space
+
+% Hyperlink formatting
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+}
+
+% Custom header formatting
+\newcommand{\name}[1]{\fontsize{12}{10}\selectfont \textbf{#1}}
+\newcommand{\contact}[2]{#1 \hfill #2}
+\newcommand{\contactinfo}[3]{\textit{#1} \hfill \textit{#2} \hfill \textit{#3}}
+
+\begin{document}
+
+%--------------------HEADER--------------------
+\name{Kalin Vogel} \\
+\contact{\faIcon{envelope} kalinvogel66@gmail.com}{\faIcon{phone} (320) 310-1323} \\
+\contactinfo{\faIcon{home} 111 7th Ave, Eau Claire, WI}{\faIcon{linkedin} \href{https://www.linkedin.com/in/yourprofile}{linkedin.com/in/kalin-vogel}}{\faIcon{github} \href{https://github.com/yourusername}{github.com/kalinvogel}}
+%--------------------EDUCATION--------------------
+\section*{Education}
+\subsection*{\textbf{University of Wisconsin Eau Claire} \hfill \textbf{Dec 2025}} 
+\textbf{B.Sc. in Computer Science} \hfill \textit{GPA: 3.82/4.00} \\
+
+{\fontsize{12}{18}\selectfont{
+\hspace*{20pt} Relevant Courses: Data Structures, Algorithms, Memory Systems, Computer Architecture\\
+\hspace*{40pt} Software Engineering 1, Discrete Math, Web Systems, Database Systems
+}
+}
+\vspace{.6em} % Add vertical space after Relevant Courses
+
+\textbf{\hspace*{10pt}Geospatial, Geographic Information Systems Certificate}
+
+%--------------------EXPERIENCE--------------------
+\section*{Experience}
+\subsection*{{Menards, Inc.}\hfill\textbf{Eau Claire, WI}}
+
+\hspace{12pt}\textbf{{Design-IT Developer Intern} \hfill \textit{Sep 2024 – Present}} \\
+\vspace{-1em}
+{\fontsize{12}{15}\selectfont
+\begin{itemize}[leftmargin=30pt]
+    \item Migrate 6+ app-specific admin sites into one central location for consolidation
+    \item Develop internal webpages for business users to analyze and modify databases
+    \item Build and maintain external, scalable Angular web apps used in-store and online
+    \item Update databases to reflect changes: new, discontinued, and seasonal items
+\end{itemize}
+}
+
+\hspace{12pt}\textbf{{Quality Assurance Intern} \hfill \textit{Mar 2024 – Sep 2024}} \\
+\vspace{-1em}
+{\fontsize{12}{15}\selectfont
+\begin{itemize}[leftmargin=30pt]
+    \item Led software testing for 15+ mobile in-store applications
+    \item Authored 100+ test cases to ensure functional and regression coverage
+    \item Conducted testing on two new tablets to be deployed to 350+ stores
+    \item Collaborated with developers and business teams ensuring requirements were met
+\end{itemize}
+}
+
+
+%--------------------PROJECTS--------------------
+\section*{Projects}
+\subsection*{{\fontsize{12}{15}\selectfont "Identifying Essential Data-Points and Designing a Predictive Model: towards more efficient Physical-Therapy Scheduling"   } \normalsize \textit{(PI Dr.Kraker and Dr.Siddique)}}
+{\fontsize{12}{15}\selectfont
+\begin{itemize}[leftmargin=30pt]
+    \item Collaborated with a team to present at the UWEC/Mayo Health Innovation Challenge
+    \item Tasked to find a solution to decrease load on PT clinics and get patients seen sooner
+    \item Identified and proposed solutions to reduce the load on PT clinics and expedite patient care
+    \item Explored and evaluated machine learning models for practical, low-cost implementation
+    \item Gained knowledge on HIPAA regulations, production challenges, and the ethics of prioritization
+\end{itemize}
+}
+\subsection*{Higher-Or-Lower Game}
+{\fontsize{12}{15}\selectfont
+\begin{itemize}[leftmargin=30pt]
+    \item Developed a Java-based game where players guess which item has a higher price
+    \item Integrated third-party APIs for real-time information, providing up-to-date market data 
+    \item Designed with a modular architecture that allows for the addition of new game titles and features
+    \item Implemented asynchronous loading to optimize performance, memory, and reduce wait times
+\end{itemize}
+}
+\subsection*{{Fake News Classification Model}  \normalsize \textit{(PI Jim Seliya)}} 
+{\fontsize{12}{15}\selectfont
+\begin{itemize}[leftmargin=30pt]
+    \item Conducted research to identify the best machine learning models for fake news classification
+    \item Built preprocessing pipeline to clean and tokenize data for model training, in Python
+    \item Analyzed and visualized precision, recall, and F1-score metrics to monitor model improvement
+    \item Technologies Used: numpy, pandas, matplot, xgboost, seaborn, catboost, nltk
+\end{itemize}
+}
+%--------------------SKILLS--------------------
+\section*{Skills}
+\begin{itemize}[leftmargin=20pt, itemsep=0.2em] % Adjust itemsep for consistent spacing
+{\fontsize{12}{15}\selectfont
+    \item \textbf{Back-End Technologies:} Java, Node.js, C, Python
+    \item \textbf{Web Development Frameworks:} Angular, RxJs, 3JS, Bootstrap
+    \item \textbf{Front-end Technologies:} Typescript, HTML, SCSS
+    \item \textbf{Tools:} Git, Bitbucket, Jira, qTest, Tosca, Confluence, LaTeX
+}
+\end{itemize}
+\end{document}
+
